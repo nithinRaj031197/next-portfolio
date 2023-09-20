@@ -6,6 +6,8 @@ import "./scss/globals.css";
 import StyledLayout from "./components/StyledComponent";
 import Loader from "./components/Loader";
 import { useState } from "react";
+import SocialIcons from "./components/SocialIcons";
+import Hero from "./sections/Hero";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,7 +23,11 @@ export default function Home() {
       {showContent ? (
         <>
           <StyledLayout />
-          <Navbar />{" "}
+          <Navbar />
+          <SocialIcons />
+          <main>
+            <Hero />
+          </main>
         </>
       ) : (
         <Loader isLoading={isLoading} setIsLoading={handleLoaderLoaded} />

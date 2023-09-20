@@ -17,12 +17,16 @@
         padding: 10px;
         color: var(--lightest-slate);
         transition: 0.3s ease-in-out;
-        outline: 2px dashed transparent;
+        // outline: 2px dashed transparent;
+        border: 2px solid transparent;
         &:hover {
           color: var(--theme-color);
+          border-radius: 50%;
+          border-color: var(--theme-color);
         }
         &:focus {
-          outline-color: var(--theme-color);
+          // outline-color: var(--theme-color);
+
           transform: translateY(-4px);
           color: var(--theme-color);
         }
