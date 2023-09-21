@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Button from "../components/Button";
 function Hero() {
   return (
-    <div className="hero" id="">
+    <div className="hero">
       <motion.h1
         className="hero-title"
         initial={{ opacity: 0, y: 5 }}
@@ -54,18 +54,6 @@ function Hero() {
         Experienced full-stack developer proficient in building robust web applications, from server-side logic to
         intuitive user interfaces, with a keen eye for creating engaging and responsive user experiences.
       </motion.p>
-      {/* <motion.div
-        className="hero-button"
-        initial={{ opacity: 0, y: 5 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-          ease: "easeInOut",
-          delay: 1.65,
-        }}
-      >
-        <Button text="Check out my course" link="https://youtube.com/kishansheth21" />
-      </motion.div> */}
     </div>
   );
 }

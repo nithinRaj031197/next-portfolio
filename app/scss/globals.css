@@ -61,3 +61,8 @@ html {
   border: 3px solid var(--background-color);
   border-radius: 10px;
 }
+
+:target {
+  display: block;
+  position: relative;
+}

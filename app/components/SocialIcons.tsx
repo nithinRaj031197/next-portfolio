@@ -7,6 +7,7 @@ import {
   FiLinkedin,
   // FiTwitter,
 } from "react-icons/fi";
+import { SiLeetcode } from "react-icons/si";
 import Link from "next/link";
 
 const SocialIcons = () => {
@@ -32,6 +33,11 @@ const SocialIcons = () => {
     //   icon: <FiTwitter />,
     //   link: "https://twitter.com/koolkishansheth",
     // },
+    {
+      name: "Leetcode",
+      icon: <SiLeetcode />,
+      link: "https://leetcode.com/nithinraj03/",
+    },
   ];
   return (
     <motion.div

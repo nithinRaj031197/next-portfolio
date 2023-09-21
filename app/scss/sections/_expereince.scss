@@ -1,6 +1,10 @@
+#experience {
+  margin-bottom: 23rem;
+}
+
 .experience {
   margin: 15rem auto;
-  max-width: 700px;
+  max-width: 900px;
   .title {
     font-family: var(--raleway);
     color: var(--lightest-slate);
@@ -9,10 +13,15 @@
       margin-bottom: 2rem;
       font-size: var(--tx2large);
       font-weight: 700;
+      // &::before {
+      //   counter-increment: title;
+      //   content: "0" counter(title) ".";
+      //   margin-right: 0.5rem;
+      //   color: var(--theme-color);
+      // }
       &::before {
-        counter-increment: title;
-        content: "0" counter(title) ".";
-        margin-right: 0.5rem;
+        content: "*";
+        margin-right: 1rem;
         color: var(--theme-color);
       }
       &::after {
@@ -22,7 +31,7 @@
         top: 20px;
         width: 300px;
         height: 2px;
-        margin-left: 380px;
+        margin-left: 320px;
         background-color: var(--lightest-navy);
       }
     }
@@ -40,7 +49,7 @@
         position: absolute;
         left: -0.5px;
         top: 0;
-        height: 2.5rem;
+        height: 3.5rem;
         width: 3px;
         transition: 0.3s ease-in-out;
       }
@@ -53,7 +62,7 @@
         background-color: var(--lightest-navy);
       }
       &-item {
-        height: 2.5rem;
+        height: 3.5rem;
         padding: 0 1.5rem;
         display: flex;
         vertical-align: middle;
@@ -115,17 +124,18 @@
       }
     }
   }
-  @media screen and (max-width: 968px) {
+  @media screen and (max-width: 1080px) {
+    margin: 12rem 0;
     .title {
       h2 {
         &::after {
-          width: 100px;
+          width: 0px;
         }
       }
     }
   }
-  @media screen and (max-width: 600px) {
-    margin: 5rem auto;
+  @media screen and (max-width: 768px) {
+    margin: 12rem auto;
     .container {
       grid-template-columns: 1fr;
       padding: 1rem;
@@ -145,8 +155,22 @@
     }
   }
   @media screen and (max-width: 480px) {
+    margin: 12rem 0;
     .title {
       h2 {
+        margin-bottom: 0rem;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 321px) {
+    margin: 12rem 0;
+    .title {
+      h2 {
+        margin-bottom: 0rem;
         &::after {
           display: none;
         }

@@ -8,6 +8,8 @@ import Loader from "./components/Loader";
 import { useState } from "react";
 import SocialIcons from "./components/SocialIcons";
 import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Experience from "./sections/Experience";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,7 +28,12 @@ export default function Home() {
           <Navbar />
           <SocialIcons />
           <main>
+            <div id=""></div>
             <Hero />
+            <div id="about"></div>
+            <About />
+            <div id="experience"></div>
+            <Experience />
           </main>
         </>
       ) : (
