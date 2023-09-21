@@ -32,13 +32,14 @@ function About() {
             Node.js.
           </p>
           <p className="about-grid-info-text">
-            I'm a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworks
-            like React.js, Node.js, Nest.js and Next.js.
+            I&apos;m a skilled software developer with experience in TypeScript and JavaScript, and expertise in
+            frameworks like React.js, Node.js, Nest.js and Next.js.
           </p>
 
           <p className="about-grid-info-text">
-            I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly
-            solutions that solve real-world problems. Let's work together to bring your ideas to life!
+            I&apos;m a quick learner and collaborate closely with clients to create efficient, scalable, and
+            user-friendly solutions that solve real-world problems. Let&apos;s work together to bring your ideas to
+            life!
           </p>
 
           {/* <p className="about-grid-info-text">

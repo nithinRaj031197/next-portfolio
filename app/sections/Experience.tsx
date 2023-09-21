@@ -84,7 +84,7 @@ const Experience = () => {
       }}
     >
       <div className="title">
-        <h2>Work Experience</h2>
+        <h2>Where I&apos;ve Worked</h2>
       </div>
       <div className="container">
         <ul className="exp-slider">
