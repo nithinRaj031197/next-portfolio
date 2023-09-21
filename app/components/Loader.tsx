@@ -8,9 +8,9 @@ type ILoaderProps = { isLoading: boolean; setIsLoading: () => void };
 
 const Loader = ({ isLoading, setIsLoading }: ILoaderProps) => {
   useEffect(() => {
-    // setTimeout(() => {
-    setIsLoading();
-    // }, 1900);
+    setTimeout(() => {
+      setIsLoading();
+    }, 1900);
   }, [setIsLoading]);
 
   return (
@@ -25,12 +25,12 @@ const Loader = ({ isLoading, setIsLoading }: ILoaderProps) => {
             ease: "easeInOut",
           }}
         >
-          <div className="loading-spinner">
+          {/* <div className="loading-spinner">
             <div className="circle-wrapper">
               <div className="circle"></div>
             </div>
-            <Image src="/download.png" alt="Logo" width={300} height={300} className="circle-image" />
-          </div>
+          </div> */}
+          <Image src="/download.png" alt="Logo" width={300} height={300} className="circle-image" />
         </motion.div>
       )}
     </AnimatePresence>
