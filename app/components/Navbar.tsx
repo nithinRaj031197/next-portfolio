@@ -5,7 +5,7 @@ import { CgClose } from "react-icons/cg";
 import React, { BaseSyntheticEvent, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Logo from "./Logo";
-import Button from "./Button";
+
 function Navbar() {
   const [navbarVisible, setNavbarVisible] = useState(false);
   const [responsiveNavVisible, setResponsiveNavVisible] = useState(false);
@@ -120,9 +120,7 @@ function Navbar() {
               ease: "easeInOut",
               delay: 0.6,
             }}
-          >
-            <Button text="Resume" link="http://localhost:3000/resume.pdf" />
-          </motion.div>
+          ></motion.div>
         </div>
       </div>
     </nav>

@@ -1,7 +1,7 @@
-import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Button from "../components/Button";
+
 function Hero() {
   return (
     <div className="hero">
@@ -54,6 +54,10 @@ function Hero() {
         Experienced full-stack developer proficient in building robust web applications, from server-side logic to
         intuitive user interfaces, with a keen eye for creating engaging and responsive user experiences.
       </motion.p>
+      <motion.div className="flex gap-5">
+        <Button text="Resume" link="https://drive.google.com/file/d/1Y4K4TYFJBee_h0p4ChmdgqUwaa30Yh9N/view" />
+        {/* <Button text="CV" link="https://drive.google.com/file/d/1QY2brFVSx6-x16RuzuceiQZDD4WRwHsj/view?usp=sharing" /> */}
+      </motion.div>
     </div>
   );
 }

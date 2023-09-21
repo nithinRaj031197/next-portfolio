@@ -125,6 +125,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
+      <div id="work"></div>
     </motion.section>
   );
 };

@@ -7,7 +7,8 @@
   max-width: 900px;
   .title {
     font-family: var(--raleway);
-    color: var(--lightest-slate);
+    // color: var(--lightest-slate);
+    color: var(--theme-color);
     position: relative;
     h2 {
       margin-bottom: 2rem;
