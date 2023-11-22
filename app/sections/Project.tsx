@@ -1,5 +1,24 @@
 import React from "react";
 import { motion } from "framer-motion";
+import IndividualProject from "../components/IndividualProject";
+import { Project } from "@/global";
+
+const projects: Project[] = [
+  {
+    id: 1,
+    title: "Dynamic Form Generator",
+    imagePath: "/dynamic_form_generator_pic.png",
+    description:
+      "A software tool or application that allows users to create, customize, and manage dynamic, interactive forms for various purposes without the need for extensive programming knowledge.",
+  },
+  {
+    id: 2,
+    title: "Task Organizer",
+    imagePath: "/task_organizer_pic.png",
+    description:
+      "A task organizing application designed to help individuals and teams efficiently manage their tasks, prioritize work, and increase productivity.",
+  },
+];
 
 const Project = () => {
   return (
@@ -18,9 +37,9 @@ const Project = () => {
         <h2>Projects</h2>
       </div>
       <div className="cards">
-        <div className="card">1</div>
-        <div className="card">1</div>
-        <div className="card">1</div>
+        {projects?.map((project: Project, index: number) => {
+          return <IndividualProject key={project.id} project={project} index={index} />;
+        })}
       </div>
     </motion.section>
   );

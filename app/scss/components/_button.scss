@@ -8,6 +8,9 @@
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: var(--tsm);
   outline: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   &:hover {
     background-color: var(--lightest-navy);
   }

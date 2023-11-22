@@ -8,13 +8,65 @@
   .cards {
     margin-top: 1rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    gap: 30px;
     .card {
-      border: 2px solid var(--theme-color);
-      height: 300px;
-      width: 250px;
+      height: 250px;
+      width: 100%;
       border-radius: 1rem;
+      display: flex;
+      padding: 5px;
+      gap: 10px;
+
+      .thumbnail {
+        flex: 1;
+        box-shadow: 0 0 5px 1px var(--theme-color);
+        border-radius: 5px;
+        img {
+          height: 100%;
+          border-radius: 5px;
+        }
+      }
+      .project_info {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        .project_title {
+          color: var(--theme-color);
+          font-size: 20px;
+          text-align: center;
+        }
+        .project_desc {
+          width: 100%;
+          height: 150px;
+          padding: 10px;
+          text-align: justify;
+        }
+        .project_buttons {
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          font-size: 12px;
+          .github_code,
+          .view_project {
+            border: 2px solid var(--theme-color);
+            border-radius: 10px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            &:hover {
+              background-color: var(--theme-color);
+              color: var(--background-color);
+            }
+          }
+        }
+      }
     }
   }
 }
