@@ -67,6 +67,50 @@ function About() {
             <Image src="/nithin_pic.jpeg" alt="profile" fill style={{ borderRadius: "50%" }} className="profile__pic" />
           </div>
         </div> */}
+        <div className="about-skills">
+          <div className="about-skill" title="HTML-5">
+            <img src="/html.svg" alt="HTML-5" />
+          </div>
+          <div className="about-skill" title="CSS">
+            <img src="/css.png" alt="CSS" />
+          </div>
+          <div className="about-skill" title="JavaScript">
+            <img src="/js.svg" alt="JavaScript" />
+          </div>
+          <div className="about-skill" title="React.js">
+            <img src="/reactjs.png" alt="React.js" />
+          </div>
+          <div className="about-skill" title="Node.js">
+            <img src="/nodejs.png" alt="Node.js" />
+          </div>
+          <div className="about-skill" title="Next.js">
+            <img src="/nextjs.svg" alt="Next.js" />
+          </div>
+          <div className="about-skill" title="Nest.js">
+            <img src="/nestjs.svg" alt="Nest.js" />
+          </div>
+          <div className="about-skill" title="Tailwind CSS">
+            <img src="/tailwindcss.svg" alt="Tailwind CSS" />
+          </div>
+          <div className="about-skill" title="GitHub">
+            <img src="/github.png" alt="GitHub" />
+          </div>
+          <div className="about-skill" title="Typescript">
+            <img src="/typescript.png" alt="Typescript" />
+          </div>
+          <div className="about-skill" title="Redux">
+            <img src="/redux.svg" alt="Redux" />
+          </div>
+          <div className="about-skill" title="Docker">
+            <img src="/docker.png" alt="Docker" />
+          </div>
+          <div className="about-skill" title="MongoDB">
+            <img src="/mongodb.png" alt="MongoDB" />
+          </div>
+          <div className="about-skill" title="MySQL">
+            <img src="/mysql.svg" alt="MySQL" />
+          </div>
+        </div>
       </div>
     </motion.section>
   );

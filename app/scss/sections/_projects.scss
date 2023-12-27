@@ -1,8 +1,21 @@
-.experience {
-  margin: 15rem 0;
-
+.projects {
   .title {
+    font-family: var(--raleway);
+    margin-bottom: 20px;
     color: var(--theme-color);
+    position: relative;
+
+    h2 {
+      margin-bottom: 2rem;
+      font-size: var(--tx2large);
+      font-weight: 700;
+
+      &::before {
+        content: "*";
+        margin-right: 1rem;
+        color: var(--theme-color);
+      }
+    }
   }
 
   .cards {
@@ -68,5 +81,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    margin: 12 auto;
   }
 }

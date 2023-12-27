@@ -34,7 +34,7 @@
   }
   &-grid {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 60% 60%;
     gap: 1rem;
     &-info {
       display: flex;
@@ -122,6 +122,56 @@
           transition: 0.3s ease-in-out;
           // border-radius: 0.2rem;
         }
+      }
+    }
+  }
+
+  .about-grid {
+    .about-skills {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+
+    .about-skill {
+      height: 70px;
+      width: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; /* Add position: relative for positioning the tooltip */
+      background-color: white;
+      box-shadow: 0 0 5px 2px var(--theme-color);
+      border-radius: 50%;
+      margin: 10px; /* Add margin to create some space between skills */
+      cursor: pointer;
+
+      &:hover::after {
+        content: attr(title);
+        position: absolute;
+        bottom: -30px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        // background-color: black;
+        text-shadow: 0 0 2px white;
+        color: var(--theme-color);
+        padding: 5px;
+        border-radius: 5px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none;
+        white-space: nowrap; /* Prevent tooltip from wrapping to the next line */
+      }
+
+      &:hover::after {
+        opacity: 1;
+      }
+
+      img {
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
       }
     }
   }

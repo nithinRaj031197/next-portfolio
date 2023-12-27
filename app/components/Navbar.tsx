@@ -64,7 +64,7 @@ function Navbar() {
           <Link href="#">
             <Logo />
           </Link>
-          <p className="name">ANWETICO</p>
+          {/* <p className="name">ANWETICO</p> */}
         </motion.div>
         <motion.div
           className="nav-responsive-toggle"

@@ -21,29 +21,26 @@ const Experience = () => {
       start: "Mar 2023",
       end: "July 2023",
       shortDescription: [
-        `Collaborated with cross-functional teams to develop and maintain web applications using ReactJS,
-        NodeJs, AngularJS, Python, MySQL, AWS and Keycloak technolgies resulting in improved
-        user experience and increased customer satisfaction.`,
-        `Implemented RESTful APIs and Integrated them with frontend components mainly focusing on
-        accessibility part,`,
-        `Features I have worked upon: Keycloak Integration, Chatbot UI with API integration,
-        Multi-step Form and Dynamic Forms and Data Migration to marqo-ai`,
+        ` Developed and designed an innovative chatbot integrated into a learning application, facilitating independent access to educational resources for visually impaired individuals, resulting in a user base exceeding 20,000.`,
+        `Createdandmaintainedreusablesoftwarecomponentsthatwere leveraged across various projects, reducing development efforts by 50`,
+        `Implemented accessibility enhancements that significantly enhanced the user experience for visually impaired individuals.`,
+        `TechStack:React.js,Node.js,GitHub,MySQL,AWS.`,
       ],
     },
-    {
-      name: "Ecorework",
-      shortName: "Ecorework",
-      role: "Freelancer",
-      start: "Jan 2023",
-      end: "Jan 2023",
-      shortDescription: [
-        `Assetze is a cloud-based IT asset management solution that helps businesses generate
-        reports, manage IT expenses, and assign tickets on a unified platform.`,
-        `Developed APIs, integrated a vendor registration form, incorporated
-        a Donut Cart for scheduling employee shifts, and enhanced the frontend to ensure a responsive and
-        user-friendly interface.`,
-      ],
-    },
+    // {
+    //   name: "Ecorework",
+    //   shortName: "Ecorework",
+    //   role: "Freelancer",
+    //   start: "Jan 2023",
+    //   end: "Jan 2023",
+    //   shortDescription: [
+    //     `Assetze is a cloud-based IT asset management solution that helps businesses generate
+    //     reports, manage IT expenses, and assign tickets on a unified platform.`,
+    //     `Developed APIs, integrated a vendor registration form, incorporated
+    //     a Donut Cart for scheduling employee shifts, and enhanced the frontend to ensure a responsive and
+    //     user-friendly interface.`,
+    //   ],
+    // },
     {
       name: "Exzatech Consulting Services Pvt Ltd.",
       shortName: "Exzatech",
@@ -51,25 +48,27 @@ const Experience = () => {
       start: "Nov 2021",
       end: "Dec 2022",
       shortDescription: [
-        "Collaboratively working with the team on respective projects to develop web applications using ReactJs, NestJS, PostgreSQL, MongoDB, Docker technologies.",
-        `In my past experience, I’ve Implemented more than 50+ APIs utilizing NestJS, and I’ve subse-
-        quently integrated these REST APIs into the frontend.`,
-        `Features I have worked upon: Tree File Structure component, Hazelcast caching,
-        RBAC controllers, Email templates, API Implementation.`,
+        `Developed and integrated two projects: Health Vault, where I organized patient, doctor, and hospital record components, and the Civil Registration System (CRS), a unified system for recording vital events for socio-economic planning.`,
+        `Implemented over 50+ APIs using NestJS and seamlessly integrated these REST APIs into the front end.`,
+        `Re-engineered critical modules within a sprint to optimize performance by relying on a centralized library.`,
+        `Delivered stable and timely product releases using an agile development approach.`,
+        `Identified and resolved bugs, resulting in a reduced number of findings during development and rolled out fixes to production within 24 hours
+`,
+        `TechStack:React.js,Node.js,Nest.js,Angular,GitHub,PostgreSQL, Redux, MongoDB, MySQL`,
       ],
     },
-    {
-      name: "Pixbit Solutions",
-      shortName: "Pixbit",
-      role: "ReactJs Developer (Trainee)",
-      start: "Aug 2021",
-      end: "Oct 2021",
-      shortDescription: [
-        "I received comprehensive training in ReactJs, Typescript, Material-UI 5, ReduxToolkit, and RTK Query.",
-        "I had the opportunity to contribute to a project named ”Infulls,”",
-        " I developed reusable Form Components, Autocomplete functionality, customized Accordion Components, and implemented Infinite Scrolling",
-      ],
-    },
+    // {
+    //   name: "Pixbit Solutions",
+    //   shortName: "Pixbit",
+    //   role: "ReactJs Developer (Trainee)",
+    //   start: "Aug 2021",
+    //   end: "Oct 2021",
+    //   shortDescription: [
+    //     "I received comprehensive training in ReactJs, Typescript, Material-UI 5, ReduxToolkit, and RTK Query.",
+    //     "I had the opportunity to contribute to a project named ”Infulls,”",
+    //     " I developed reusable Form Components, Autocomplete functionality, customized Accordion Components, and implemented Infinite Scrolling",
+    //   ],
+    // },
   ];
   return (
     <motion.section

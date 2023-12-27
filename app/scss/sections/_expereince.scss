@@ -1,5 +1,5 @@
 #experience {
-  margin-bottom: 23rem;
+  margin-bottom: 25rem;
 }
 
 .experience {
@@ -7,19 +7,14 @@
   max-width: 900px;
   .title {
     font-family: var(--raleway);
-    // color: var(--lightest-slate);
+    margin-bottom: 20px;
     color: var(--theme-color);
     position: relative;
     h2 {
       margin-bottom: 2rem;
       font-size: var(--tx2large);
       font-weight: 700;
-      // &::before {
-      //   counter-increment: title;
-      //   content: "0" counter(title) ".";
-      //   margin-right: 0.5rem;
-      //   color: var(--theme-color);
-      // }
+
       &::before {
         content: "*";
         margin-right: 1rem;
@@ -136,7 +131,7 @@
     }
   }
   @media screen and (max-width: 768px) {
-    margin: 12rem auto;
+    margin: 1rem auto;
     .container {
       grid-template-columns: 1fr;
       padding: 1rem;

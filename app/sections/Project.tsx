@@ -23,7 +23,7 @@ const projects: Project[] = [
 const Project = () => {
   return (
     <motion.section
-      className="experience"
+      className="projects"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
