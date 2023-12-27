@@ -10,6 +10,8 @@ const projects: Project[] = [
     imagePath: "/dynamic_form_generator_pic.png",
     description:
       "A software tool or application that allows users to create, customize, and manage dynamic, interactive forms for various purposes without the need for extensive programming knowledge.",
+    githubPath: "https://github.com/nithinRaj031197/Dynamic_form_generator",
+    projectPath: "https://nimble-kelpie-974a6c.netlify.app/",
   },
   {
     id: 2,
@@ -17,6 +19,8 @@ const projects: Project[] = [
     imagePath: "/task_organizer_pic.png",
     description:
       "A task organizing application designed to help individuals and teams efficiently manage their tasks, prioritize work, and increase productivity.",
+    githubPath: "https://github.com/nithinRaj031197/task-organizer",
+    projectPath: "https://main--meek-granita-b92b03.netlify.app/",
   },
 ];
 

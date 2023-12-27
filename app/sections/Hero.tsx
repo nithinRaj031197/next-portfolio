@@ -69,7 +69,7 @@ function Hero() {
 
       <div className="photo_container">
         <div className="pic_border"></div>
-        <img src="/nithin_pic.jpeg" alt="profile" className="profile__pic" />
+        <Image src="/nithin_pic.jpeg" width={300} height={320} alt="profile" className="profile__pic" />
       </div>
     </div>
   );

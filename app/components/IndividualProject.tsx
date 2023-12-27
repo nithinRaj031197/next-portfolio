@@ -20,11 +20,11 @@ const IndividualProject = ({ project, index }: ProjectProps) => {
             <p className="project_title">{project.title}</p>
             <p className="project_desc">{project.description}</p>
             <div className="project_buttons">
-              <a href="https://www.google.com" target="_blank" className="github_code">
+              <a href={project.githubPath} target="_blank" className="github_code">
                 <span>View Code</span>
                 <FiGithub />
               </a>
-              <a href="https://www.google.com" target="_blank" className="view_project">
+              <a href={project.projectPath} target="_blank" className="view_project">
                 <span> View project</span>
                 <HiMiniArrowTopRightOnSquare />
               </a>
@@ -37,11 +37,11 @@ const IndividualProject = ({ project, index }: ProjectProps) => {
             <p className="project_title">{project.title}</p>
             <p className="project_desc">{project.description}</p>
             <div className="project_buttons">
-              <a href="https://www.google.com" target="_blank" className="github_code">
+              <a href={project.githubPath} target="_blank" className="github_code">
                 <span>View Code</span>
                 <FiGithub />
               </a>
-              <a href="https://www.google.com" target="_blank" className="view_project">
+              <a href={project.projectPath} target="_blank" className="view_project">
                 <span> View project</span>
                 <HiMiniArrowTopRightOnSquare />
               </a>

@@ -3,4 +3,6 @@ export type Project = {
   title: string;
   imagePath: string;
   description?: string;
+  githubPath?: string;
+  projectPath?: string;
 };
