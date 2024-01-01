@@ -22,6 +22,15 @@ const projects: Project[] = [
     githubPath: "https://github.com/nithinRaj031197/task-organizer",
     projectPath: "https://main--meek-granita-b92b03.netlify.app/",
   },
+  {
+    id: 3,
+    title: "Ecommerce Application",
+    imagePath: "/ecommerce_app.png",
+    description:
+      "Developed and maintained core features for an e-commerce platform. Enhanced user experience, implemented secure payment  gateways, and optimized product search functionalities.",
+    githubPath: "https://github.com/nithinRaj031197/ecommerce-app",
+    projectPath: "https://ecommerce-app-gfdg.vercel.app/",
+  },
 ];
 
 const Project = () => {

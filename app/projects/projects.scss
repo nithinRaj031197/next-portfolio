@@ -1,0 +1,31 @@
+.projects_container {
+  background-color: #112240;
+  min-height: 100vh;
+  padding: 10px;
+
+  .projects_title {
+    height: 5vh;
+    color: #45e7ec;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .projects_display {
+    box-shadow: 0 0 2px 2px #45e7ec;
+    padding: 20px;
+    min-height: 90vh;
+    max-width: 90%;
+    margin: auto;
+
+    .projects_tab {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+
+      li {
+        font-size: 20px;
+      }
+    }
+  }
+}

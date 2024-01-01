@@ -36,9 +36,12 @@
         flex: 1;
         box-shadow: 0 0 5px 1px var(--theme-color);
         border-radius: 5px;
+        width: auto;
+        margin: 0 32px;
         img {
           height: 100%;
           border-radius: 5px;
+          object-fit: fill;
         }
       }
       .project_info {
