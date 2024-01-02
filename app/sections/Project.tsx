@@ -31,6 +31,24 @@ const projects: Project[] = [
     githubPath: "https://github.com/nithinRaj031197/ecommerce-app",
     projectPath: "https://ecommerce-app-gfdg.vercel.app/",
   },
+  {
+    id: 4,
+    title: "Kanban Board",
+    imagePath: "/kanban_board.png",
+    description:
+      "Kanban boards aid agile teams by visualizing tasks in columns, enabling easy tracking and streamlining workflows for efficient task management and collaboration.",
+    githubPath: "https://github.com/nithinRaj031197/kanban_task_tracker",
+    projectPath: "https://kanban-task-tracker.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "tic Tac Toe",
+    imagePath: "/tic_tac_toe.png",
+    description:
+      "Classic grid-based game challenging two players to strategically place their marks in a 3x3 grid, aiming to achieve a row, column, or diagonal of their symbol before the opponent does.",
+    githubPath: "https://github.com/nithinRaj031197/Tic_Tac_Toe",
+    projectPath: "https://tic-tac-toe-rosy-alpha.vercel.app/",
+  },
 ];
 
 const Project = () => {

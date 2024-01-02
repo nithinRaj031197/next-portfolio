@@ -34,14 +34,16 @@
 
       .thumbnail {
         flex: 1;
-        box-shadow: 0 0 5px 1px var(--theme-color);
+        // box-shadow: 0 0 5px 1px var(--theme-color);
         border-radius: 5px;
-        width: auto;
-        margin: 0 32px;
+        // width: auto;
+        // margin: 0 32px;
+        display: flex;
+        justify-content: center;
         img {
           height: 100%;
           border-radius: 5px;
-          object-fit: fill;
+          object-fit: contain;
         }
       }
       .project_info {
