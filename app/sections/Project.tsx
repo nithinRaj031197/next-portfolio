@@ -5,15 +5,6 @@ import { Project } from "@/global";
 
 const projects: Project[] = [
   {
-    id: 1,
-    title: "Dynamic Form Generator",
-    imagePath: "/dynamic_form_generator_pic.png",
-    description:
-      "A software tool or application that allows users to create, customize, and manage dynamic, interactive forms for various purposes without the need for extensive programming knowledge.",
-    githubPath: "https://github.com/nithinRaj031197/Dynamic_form_generator",
-    projectPath: "https://nimble-kelpie-974a6c.netlify.app/",
-  },
-  {
     id: 2,
     title: "Task Organizer",
     imagePath: "/task_organizer_pic.png",
@@ -23,13 +14,13 @@ const projects: Project[] = [
     projectPath: "https://main--meek-granita-b92b03.netlify.app/",
   },
   {
-    id: 3,
-    title: "Ecommerce Application",
-    imagePath: "/ecommerce_app.png",
+    id: 1,
+    title: "Dynamic Form Generator",
+    imagePath: "/dynamic_form_generator_pic.png",
     description:
-      "Developed and maintained core features for an e-commerce platform. Enhanced user experience, implemented secure payment  gateways, and optimized product search functionalities.",
-    githubPath: "https://github.com/nithinRaj031197/ecommerce-app",
-    projectPath: "https://ecommerce-app-gfdg.vercel.app/",
+      "A software tool or application that allows users to create, customize, and manage dynamic, interactive forms for various purposes without the need for extensive programming knowledge.",
+    githubPath: "https://github.com/nithinRaj031197/Dynamic_form_generator",
+    projectPath: "https://nimble-kelpie-974a6c.netlify.app/",
   },
   {
     id: 4,
@@ -41,7 +32,16 @@ const projects: Project[] = [
     projectPath: "https://kanban-task-tracker.vercel.app/",
   },
   {
-    id: 4,
+    id: 3,
+    title: "Ecommerce Application",
+    imagePath: "/ecommerce_app.png",
+    description:
+      "Developed and maintained core features for an e-commerce platform. Enhanced user experience, implemented secure payment  gateways, and optimized product search functionalities.",
+    githubPath: "https://github.com/nithinRaj031197/ecommerce-app",
+    projectPath: "https://ecommerce-app-gfdg.vercel.app/",
+  },
+  {
+    id: 5,
     title: "tic Tac Toe",
     imagePath: "/tic_tac_toe.png",
     description:
