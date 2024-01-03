@@ -49,6 +49,14 @@ const projects: Project[] = [
     githubPath: "https://github.com/nithinRaj031197/Tic_Tac_Toe",
     projectPath: "https://tic-tac-toe-rosy-alpha.vercel.app/",
   },
+  {
+    id: 6,
+    title: "Github Clone",
+    imagePath: "/github_clone.png",
+    description: "Github home page clone",
+    githubPath: "https://github.com/nithinRaj031197/github_clone",
+    projectPath: "https://github-clone-zeta-liard.vercel.app/",
+  },
 ];
 
 const Project = () => {
