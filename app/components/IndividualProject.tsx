@@ -9,50 +9,58 @@ type ProjectProps = {
 };
 
 const IndividualProject = ({ project, index }: ProjectProps) => {
+  const link = project?.projectPath as string;
+
   return (
-    <div className="card">
-      {index % 2 === 0 ? (
-        <>
-          <div className="thumbnail">
-            <img src={project.imagePath} alt={project.title} />
-          </div>
-          <div className="project_info">
-            <p className="project_title">{project.title}</p>
-            <p className="project_desc">{project.description}</p>
-            <div className="project_buttons">
-              <a href={project.githubPath} target="_blank" className="github_code">
-                <span>View Code</span>
-                <FiGithub />
-              </a>
-              <a href={project.projectPath} target="_blank" className="view_project">
-                <span> View project</span>
-                <HiMiniArrowTopRightOnSquare />
+    <>
+      <div className="card">
+        {index % 2 === 0 ? (
+          <>
+            <div className="thumbnail">
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                <img src={project.imagePath} alt={project.title} />
               </a>
             </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="project_info">
-            <p className="project_title">{project.title}</p>
-            <p className="project_desc">{project.description}</p>
-            <div className="project_buttons">
-              <a href={project.githubPath} target="_blank" className="github_code">
-                <span>View Code</span>
-                <FiGithub />
-              </a>
-              <a href={project.projectPath} target="_blank" className="view_project">
-                <span> View project</span>
-                <HiMiniArrowTopRightOnSquare />
+            <div className="project_info">
+              <p className="project_title">{project.title}</p>
+              <p className="project_desc">{project.description}</p>
+              <div className="project_buttons">
+                <a href={project.githubPath} target="_blank" className="github_code">
+                  <span style={{ fontWeight: "bold" }}>View Code</span>
+                  <FiGithub />
+                </a>
+                <a href={project.projectPath} target="_blank" className="view_project">
+                  <span style={{ fontWeight: "bold" }}> View project</span>
+                  <HiMiniArrowTopRightOnSquare />
+                </a>
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="project_info">
+              <p className="project_title">{project.title}</p>
+              <p className="project_desc">{project.description}</p>
+              <div className="project_buttons">
+                <a href={project.githubPath} target="_blank" className="github_code">
+                  <span style={{ fontWeight: "bold" }}>View Code</span>
+                  <FiGithub />
+                </a>
+                <a href={project.projectPath} target="_blank" className="view_project">
+                  <span style={{ fontWeight: "bold" }}> View project</span>
+                  <HiMiniArrowTopRightOnSquare />
+                </a>
+              </div>
+            </div>
+            <div className="thumbnail">
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                <img src={project.imagePath} alt={project.title} />
               </a>
             </div>
-          </div>
-          <div className="thumbnail">
-            <img src={project.imagePath} alt={project.title} />
-          </div>
-        </>
-      )}
-    </div>
+          </>
+        )}
+      </div>
+    </>
   );
 };
 

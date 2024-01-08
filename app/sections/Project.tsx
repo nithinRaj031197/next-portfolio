@@ -53,7 +53,7 @@ const projects: Project[] = [
     id: 6,
     title: "Github Clone",
     imagePath: "/github_clone.png",
-    description: "Github home page clone",
+    description: "A stunning and flawless replication of the GitHub homepage.",
     githubPath: "https://github.com/nithinRaj031197/github_clone",
     projectPath: "https://github-clone-zeta-liard.vercel.app/",
   },

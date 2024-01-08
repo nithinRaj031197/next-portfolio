@@ -32,7 +32,7 @@ const Experience = () => {
       shortName: "Ecorework",
       role: "Freelancer",
       start: "Jan 2023",
-      end: "Jan 2023",
+      end: "Feb 2023",
       shortDescription: [
         `Assetze is a cloud-based IT asset management solution that helps businesses generate
         reports, manage IT expenses, and assign tickets on a unified platform.`,
@@ -61,7 +61,7 @@ const Experience = () => {
       name: "Pixbit Solutions",
       shortName: "Pixbit",
       role: "ReactJs Developer (Trainee)",
-      start: "Aug 2021",
+      start: "July 2021",
       end: "Oct 2021",
       shortDescription: [
         "I received comprehensive training in ReactJs, Typescript, Material-UI 5, ReduxToolkit, and RTK Query.",

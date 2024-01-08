@@ -60,7 +60,7 @@ function Hero() {
         <motion.div className="flex gap-5">
           <Button
             text="Download Resume"
-            link="https://drive.google.com/file/d/1rbiFgBHcoDstgmyeRZfwstW_1-MmM5et/view?usp=sharing"
+            link="https://drive.google.com/file/d/1YCjft-2DFrFsnHKxiy1i-S4_LTZ4y8ql/view?usp=sharing"
             icon={<HiMiniArrowDownTray />}
           />
           {/* <Button text="CV" link="https://drive.google.com/file/d/1QY2brFVSx6-x16RuzuceiQZDD4WRwHsj/view?usp=sharing" icon={<HiMiniArrowDownTray/>} /> */}
