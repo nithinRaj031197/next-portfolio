@@ -1,5 +1,4 @@
 export const slideIn = (direction: string, type: string, delay: number, duration: number) => {
-  console.log(direction, type, delay, duration);
   return {
     hidden: {
       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,

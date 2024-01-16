@@ -7,6 +7,7 @@ import { EarthCanvas } from "../canvas";
 
 import { styles } from "../styles";
 import "../scss/globals.css";
+import axios from "axios";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -28,38 +29,28 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
     if (form.name === "" || form.email === "") return;
 
-    emailjs
-      .send(
-        process.env.VITE_APP_EMAILJS_SERVICE_ID || "",
-        process.env.VITE_APP_EMAILJS_TEMPLATE_ID || "",
-        {
-          from_name: form.name,
-          to_name: "JavaScript Mastery",
-          from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
-          message: form.message,
+    await axios
+      .post("https://sheet.best/api/sheets/f86537f1-2f37-4610-9f49-84def806c303", JSON.stringify(form), {
+        headers: {
+          "Content-Type": "application/json",
         },
-        process.env.VITE_APP_EMAILJS_PUBLIC_KEY || ""
-      )
+      })
       .then(() => {
-        alert("Thank you. I will get back to you as soon as possible.");
-
+        alert("Successfully shared the context, Thankyou!");
         setForm({
           name: "",
           email: "",
           message: "",
         });
       })
-      .catch((error) => {
-        console.error(error);
-
-        alert("Ahh, something went wrong. Please try again.");
+      .catch((err) => {
+        console.error(err);
       })
       .finally(() => {
         setLoading(false);
