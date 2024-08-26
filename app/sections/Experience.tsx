@@ -15,6 +15,35 @@ const Experience = () => {
 
   const expereinces = [
     {
+      name: "Groyyo (Intent 360)",
+      role: "React Developer",
+      shortName: "Groyyo",
+      start: "Jan 2024",
+      end: "Present",
+      shortDescription: [
+        `Intent 360 is a pioneering apparel-tech organization that provides
+        advanced digital solutions and cloud-based hyper-automation
+        technology, specifically tailored for B2B supply chain management in
+        the manufacturing industry.`,
+        ` Developed and implemented a comprehensive React component
+        library to ensure consistency across all web applications, streamlining
+        the front-end architecture and improving scalability. Collaborated
+        with cross-functional teams to translate business and user
+        requirements into high-quality, functional, and aesthetic components.`,
+        `management system using React and Redux, which efficiently
+        allocated orders and tracked fabric usage across multiple factories,
+        enhancing production management and maximizing resource
+        utilization.`,
+        `Led the development of an AI-powered solution in React,
+        implementing role-based access and dynamic dashboards to enhance
+        user experience and operational efficiency. We conducted
+        performance analysis and refactored components to continuously
+        improve module accuracy and efficiency within the Intent 360
+        platform`,
+        `TechStack: React.js, GitHub,Redux Toolkit, AWS, React Query`,
+      ],
+    },
+    {
       name: "Kenpath Technologies Pvt Ltd.",
       role: "Software Engineer",
       shortName: "Kenpath",
@@ -24,7 +53,7 @@ const Experience = () => {
         ` Developed and designed an innovative chatbot integrated into a learning application, facilitating independent access to educational resources for visually impaired individuals, resulting in a user base exceeding 20,000.`,
         `Created and maintained reusable software components that were leveraged across various projects, reducing development efforts by 50`,
         `Implemented accessibility enhancements that significantly enhanced the user experience for visually impaired individuals.`,
-        `TechStack:React.js,Node.js,GitHub,MySQL,AWS.`,
+        `TechStack: React.js,Node.js,GitHub,MySQL,AWS.`,
       ],
     },
     {
@@ -54,7 +83,7 @@ const Experience = () => {
         `Delivered stable and timely product releases using an agile development approach.`,
         `Identified and resolved bugs, resulting in a reduced number of findings during development and rolled out fixes to production within 24 hours
 `,
-        `TechStack:React.js,Node.js,Nest.js,Angular,GitHub,PostgreSQL, Redux, MongoDB, MySQL`,
+        `TechStack: React.js,Node.js,Nest.js,Angular,GitHub,PostgreSQL, Redux, MongoDB, MySQL`,
       ],
     },
     {
