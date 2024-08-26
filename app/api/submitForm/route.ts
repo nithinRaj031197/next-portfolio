@@ -1,11 +1,11 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextApiResponse } from "next";
 import { google } from "googleapis";
 import { NextResponse } from "next/server";
 import { join } from "path";
 
 const sheets = google.sheets("v4");
 const spreadsheetId = "1IXvHEwo9hEzOJyWUHsUtixsZN6sjXOXCcsgjg6q570Q";
-export const POST = async (req: NextApiRequest, res: NextApiResponse) => {
+export const POST = async (req: any, res: NextApiResponse) => {
   console.log(req.body);
   if (req.method === "POST") {
     const formData = req.body;
