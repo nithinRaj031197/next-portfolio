@@ -54,13 +54,13 @@ function Hero() {
             delay: 1.35,
           }}
         >
-          Experienced full-stack developer proficient in building robust web applications, from server-side logic to
-          intuitive user interfaces, with a keen eye for creating engaging and responsive user experiences.
+          Experienced full-stack developer proficient in building robust web applications, from server-side logic to intuitive user interfaces, with a
+          keen eye for creating engaging and responsive user experiences.
         </motion.p>
         <motion.div className="flex gap-5">
           <Button
             text="Download Resume"
-            link="https://drive.google.com/file/d/1YCjft-2DFrFsnHKxiy1i-S4_LTZ4y8ql/view?usp=sharing"
+            link="https://drive.google.com/file/d/1z1vcozJGsDQfcjNw1_7XiEw1qNR4xyGH/view?usp=sharing"
             icon={<HiMiniArrowDownTray />}
           />
           {/* <Button text="CV" link="https://drive.google.com/file/d/1QY2brFVSx6-x16RuzuceiQZDD4WRwHsj/view?usp=sharing" icon={<HiMiniArrowDownTray/>} /> */}
@@ -70,7 +70,7 @@ function Hero() {
       <div className="photo_container">
         <div className="pic_border"></div>
 
-        <Image src="/nithin_pic.jpeg" width={300} height={320} alt="profile" className="profile__pic" />
+        <Image src="/nithinraj.jpeg" width={320} height={320} alt="profile" className="profile__pic" />
       </div>
     </div>
   );
