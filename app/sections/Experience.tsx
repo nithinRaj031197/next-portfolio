@@ -53,7 +53,7 @@ const Experience = () => {
         ` Developed and designed an innovative chatbot integrated into a learning application, facilitating independent access to educational resources for visually impaired individuals, resulting in a user base exceeding 20,000.`,
         `Created and maintained reusable software components that were leveraged across various projects, reducing development efforts by 50`,
         `Implemented accessibility enhancements that significantly enhanced the user experience for visually impaired individuals.`,
-        `TechStack: React.js,Node.js,GitHub,MySQL,AWS.`,
+        `TechStack: React.js,Next.js,Node.js,GitHub,MySQL,AWS.`,
       ],
     },
     {
