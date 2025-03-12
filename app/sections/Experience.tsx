@@ -19,7 +19,7 @@ const Experience = () => {
       role: "React Developer",
       shortName: "Groyyo",
       start: "Jan 2024",
-      end: "Present",
+      end: "Mar 2025",
       shortDescription: [
         `Intent 360 is a pioneering apparel-tech organization that provides
         advanced digital solutions and cloud-based hyper-automation
