@@ -6,11 +6,11 @@ import ParticlesBackground from "./ParticlesBackground";
 
 const Hero = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen z-50">
+    <div className="flex justify-center items-center z-50">
       <ParticlesBackground />
 
       <motion.div
-        className="min-h-screen flex-1 flex items-center justify-center"
+        className="flex-1 flex items-center justify-center"
         initial={{ x: "-100vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -44,7 +44,7 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
-        className="min-h-screen flex-1 flex items-center justify-center"
+        className="flex-1 flex items-center justify-center"
         initial={{ x: "100vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}

@@ -20,6 +20,12 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+body,
+html {
+  overflow-x: hidden;
+  overflow-y: auto; /* Ensure vertical scrolling is enabled */
+}
+
 .animated-dotted-background {
   background-color: #0b192e;
   background-image: radial-gradient(#4a5568 1px, transparent 1px);
