@@ -34,12 +34,21 @@
   transition: all ease-in-out 1s;
 }
 
-/* Common button styles */
+.header {
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+}
+
 .custom-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  /* width: 160px; */
+
   padding: 2px 10px;
   height: 50px;
   font-size: 14px;
@@ -56,7 +65,6 @@
   color: #45e7ec;
 }
 
-/* Hover Effect */
 .custom-button:hover {
   background: rgba(69, 231, 236, 0.1);
   box-shadow: 0px 1px 10px 5px rgba(69, 231, 236, 0.5);
