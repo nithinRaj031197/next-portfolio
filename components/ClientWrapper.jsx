@@ -18,9 +18,9 @@ export default function ClientWrapper({ children }) {
       {isLoaded && (
         <>
           <div className="video-container">
-            <video autoPlay loop muted className="background-video">
+            {/* <video autoPlay loop muted className="background-video">
               <source src="/northern_lights_bg.mp4" type="video/mp4" />
-            </video>
+            </video> */}
             <main className="mt-16 min-h-screen">{children}</main>
           </div>
         </>
