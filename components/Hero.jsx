@@ -9,7 +9,6 @@ const Hero = () => {
   return (
     <div className="flex flex-col-reverse sm:flex-row justify-center items-center z-50 min-h-screen">
       <ParticlesBackground />
-
       <motion.div
         className="flex-1 flex sm:items-center justify-center"
         initial={{ x: "-100vw", opacity: 0 }}

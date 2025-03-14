@@ -43,7 +43,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <div className="flex flex-col items-center w-full py-12 bg-gray-900 text-white relative">
+    <div className="flex flex-col items-center w-full py-12 bg-gray-900 text-white relative animated-dotted-background">
       {/* Background Glow Effect */}
       <div className="absolute  blur-[100px] opacity-70 pointer-events-none"></div>
 

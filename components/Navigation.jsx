@@ -15,8 +15,8 @@ const Navigation = () => {
         </a>
       </li>
       <li className="link">
-        <a href="#work" aria-label="Work Section">
-          Work
+        <a href="#projects" aria-label="Projects Section">
+          Projects
         </a>
       </li>
     </ul>

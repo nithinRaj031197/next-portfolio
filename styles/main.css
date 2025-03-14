@@ -69,3 +69,21 @@
   background: rgba(69, 231, 236, 0.1);
   box-shadow: 0px 1px 10px 5px rgba(69, 231, 236, 0.5);
 }
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #222, #45e7ec, #fff, #45e7ec, #222);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  animation: shimmer 2s ease-in-out infinite;
+}
