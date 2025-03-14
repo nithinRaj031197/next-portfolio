@@ -1,14 +1,11 @@
 "use client";
 
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { FaBriefcase } from "react-icons/fa";
-import { FaCalendarAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const experiences = [
   {
     name: "Groyyo (Intent 360)",
-    role: "React Developer",
+    role: "Frontend React.js Developer",
     start: "Jan 2024",
     end: "Mar 2025",
     shortDescription: [
@@ -16,7 +13,7 @@ const experiences = [
       "Built an AI-powered dashboard with role-based access and analytics.",
       "Created a smart order management system using Redux.",
     ],
-    techStack: ["React.js", "Redux Toolkit", "AWS", "React Query"],
+    techStack: ["React.js", "Next.js", "Redux Toolkit", "AWS", "React Query"],
   },
   {
     name: "Kenpath Technologies Pvt Ltd.",
@@ -46,45 +43,43 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <div className="bg-gray-900 text-white py-16 px-4">
-      <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Experience</h2>
+    <div className="flex flex-col items-center w-full py-12 bg-gray-900 text-white relative">
+      {/* Background Glow Effect */}
+      <div className="absolute  blur-[100px] opacity-70 pointer-events-none"></div>
 
-      <VerticalTimeline animate={true} layout="1-column" lineColor="#3b82f6">
+      <h2 className="text-4xl font-bold mb-10 text-cyan-400">Experience</h2>
+
+      <div className="relative w-full max-w-4xl px-4">
         {experiences.map((exp, index) => (
-          <VerticalTimelineElement
+          <motion.div
             key={index}
-            className="vertical-timeline-element--work"
-            contentStyle={{
-              background: "#1f2937", // Tailwind Gray-800
-              color: "#fff",
-              borderRadius: "10px",
-            }}
-            contentArrowStyle={{ borderRight: "7px solid #1f2937" }}
-            date={`${exp.start} - ${exp.end}`}
-            iconStyle={{ background: "#3b82f6", color: "#fff" }}
-            icon={<FaBriefcase />}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            viewport={{ once: true }}
+            className="mb-10 relative"
           >
-            <h3 className="text-2xl font-semibold">{exp.name}</h3>
-            <p className="text-lg text-blue-300">{exp.role}</p>
-
-            <ul className="mt-3 list-disc pl-5 space-y-2 text-gray-300">
-              {exp.shortDescription.map((desc, i) => (
-                <li key={i}>{desc}</li>
-              ))}
-            </ul>
-
-            {exp.techStack && (
-              <div className="mt-3 flex flex-wrap gap-2">
+            <div className="backdrop-blur-lg bg-white/10 border border-white/20 p-6 rounded-xl shadow-lg">
+              <h3 className="text-2xl font-semibold text-cyan-300">{exp.name}</h3>
+              <p className="text-lg text-gray-300">
+                {exp.role} ({exp.start} - {exp.end})
+              </p>
+              <ul className="list-disc list-inside text-gray-400 mt-2">
+                {exp.shortDescription.map((desc, i) => (
+                  <li key={i}>{desc}</li>
+                ))}
+              </ul>
+              <div className="flex flex-wrap gap-2 mt-4">
                 {exp.techStack.map((tech, i) => (
-                  <span key={i} className="px-2 py-1 bg-blue-600 rounded text-xs">
+                  <span key={i} className="bg-[#45e7ec] text-gray-900 text-sm px-3 py-1 rounded-lg shadow-md">
                     {tech}
                   </span>
                 ))}
               </div>
-            )}
-          </VerticalTimelineElement>
+            </div>
+          </motion.div>
         ))}
-      </VerticalTimeline>
+      </div>
     </div>
   );
 };

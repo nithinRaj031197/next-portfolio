@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Header showLogo={true} />
-      <main style={{ paddingTop: "7rem" }} className="pt-[80px]">
+      <main style={{ paddingTop: "7rem" }}>
         <section className="z-50">
           <Hero />
         </section>
