@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const skills = [
+export const skills = [
   { title: "HTML-5", src: "/html.svg" },
   { title: "CSS", src: "/css.png" },
   { title: "JavaScript", src: "/js.svg" },

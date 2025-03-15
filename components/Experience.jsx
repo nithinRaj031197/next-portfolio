@@ -47,7 +47,7 @@ const Experience = () => {
       {/* Background Glow Effect */}
       <div className="absolute  blur-[100px] opacity-70 pointer-events-none"></div>
 
-      <h2 className="text-4xl font-bold mb-10 text-cyan-400">Experience</h2>
+      <h2 className="text-4xl font-bold mb-10 text-cyan-400 uppercase  before:content-['*'] before:mr-2 sm:tracking-[2rem]">WORK Experience</h2>
 
       <div className="relative w-full max-w-4xl px-4">
         {experiences.map((exp, index) => (
@@ -71,7 +71,7 @@ const Experience = () => {
               </ul>
               <div className="flex flex-wrap gap-2 mt-4">
                 {exp.techStack.map((tech, i) => (
-                  <span key={i} className="bg-[#45e7ec] text-gray-900 text-sm px-3 py-1 rounded-lg shadow-md">
+                  <span key={i} className="border border-[#45e7ec] text-[#45e7ec] text-sm px-3 py-1 rounded-lg shadow-md">
                     {tech}
                   </span>
                 ))}

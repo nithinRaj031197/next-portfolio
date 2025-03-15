@@ -33,13 +33,21 @@ const Hero = () => {
           </div>
 
           <div className="flex gap-10 self-start">
-            {/* Hire Button */}
             <a href="/resume.pdf" className="custom-button ">
               Download Resume
             </a>
 
-            {/* Contact Button */}
-            <a href="#contact" className="custom-button ">
+            <a
+              href="#contact"
+              className="custom-button"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }}
+            >
               Contact Me
             </a>
           </div>
@@ -54,7 +62,6 @@ const Hero = () => {
       >
         <div className="flex items-center justify-center flex-col h-[25vh] sm:h-[80vh]">
           <div className="relative flex items-center justify-between">
-            {/* Animated Background Shape */}
             <motion.div
               className="absolute left-[-2rem] w-[16rem] h-[16rem] sm:w-[20rem] sm:h-[20rem] rounded-[40%] blur-md"
               style={{

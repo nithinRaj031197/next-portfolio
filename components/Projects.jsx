@@ -2,10 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 import ViewMoreButton from "./ViewMoreButton";
-import ParticlesBackground from "./ParticlesBackground";
 const Projects = () => {
   const [projects, setProjects] = useState([]);
 
@@ -16,16 +14,16 @@ const Projects = () => {
   }, []);
 
   return (
-    <motion.section
+    <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="flex  items-center justify-center w-full py-12  text-white min-h-[100vh] z-50"
+      className="flex  items-center justify-center w-full  text-white min-h-[100vh] z-50"
     >
       <div className="flex flex-col items-center">
         <motion.h2
-          className="text-4xl font-bold mb-10 text-cyan-400 self-start uppercase px-6 " // shimmer
+          className="text-4xl before:content-['*'] before:mr-2 font-bold mb-10 text-cyan-400 self-start uppercase px-6 " // shimmer
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -41,7 +39,7 @@ const Projects = () => {
 
         <ViewMoreButton />
       </div>
-    </motion.section>
+    </motion.div>
   );
 };
 
