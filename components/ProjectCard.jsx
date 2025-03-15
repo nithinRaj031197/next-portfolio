@@ -8,7 +8,7 @@ import Card from "./Card";
 
 const ProjectCard = ({ project }) => {
   return (
-    <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
+    <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="flex items-center justify-center">
       <Card color="#45e7ec">
         <div className="flex flex-col items-center  text-center">
           <div className="relative w-full h-40">
@@ -16,7 +16,9 @@ const ProjectCard = ({ project }) => {
           </div>
 
           <h3 className="text-xl font-semibold mt-4 text-cyan-300">{project.title}</h3>
-          <p className="text-gray-300 text-sm mt-2 px-2">{project.description}</p>
+          <p className="text-gray-300 text-sm mt-2 px-2">
+            {project.description?.length > 100 ? project.description.slice(0, 100) + "..." : project.description}
+          </p>
 
           <div className="flex gap-4 mt-4">
             <a

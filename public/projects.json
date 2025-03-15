@@ -1,6 +1,22 @@
 [
   {
     "id": 1,
+    "title": "ZCRUM",
+    "imagePath": "/zcrum_pic.png",
+    "description": "ZCRUM is a Jira-like project management tool designed to streamline agile workflows. It helps teams efficiently track tasks, manage sprints, and enhance collaboration through an intuitive Kanban board and backlog system.",
+    "githubPath": "https://github.com/nithinRaj031197/jira-clone",
+    "projectPath": "https://jira-clone-9g7lo0e5i-nithinraj031197s-projects.vercel.app/"
+  },
+  {
+    "id": 7,
+    "title": "GitHub Clone",
+    "imagePath": "/github_clone.png",
+    "description": "A stunning replica of GitHub's homepage.",
+    "githubPath": "https://github.com/nithinRaj031197/github_clone",
+    "projectPath": "https://github-clone-zeta-liard.vercel.app/"
+  },
+  {
+    "id": 2,
     "title": "Task Organizer",
     "imagePath": "/task_organizer_pic.png",
     "description": "A task management app for prioritizing work & increasing productivity.",
@@ -8,7 +24,7 @@
     "projectPath": "https://main--meek-granita-b92b03.netlify.app/"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Dynamic Form Generator",
     "imagePath": "/dynamic_form_generator_pic.png",
     "description": "Create dynamic, interactive forms without coding.",
@@ -16,7 +32,7 @@
     "projectPath": "https://nimble-kelpie-974a6c.netlify.app/"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Kanban Board",
     "imagePath": "/kanban_board.png",
     "description": "Visualize and track tasks in agile teams.",
@@ -24,7 +40,7 @@
     "projectPath": "https://kanban-task-tracker.vercel.app/"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Ecommerce Application",
     "imagePath": "/ecommerce_app.png",
     "description": "Enhanced UX and optimized product search in an e-commerce platform.",
@@ -32,19 +48,11 @@
     "projectPath": "https://ecommerce-app-gfdg.vercel.app/"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Tic Tac Toe",
     "imagePath": "/tic_tac_toe.png",
     "description": "A fun 3x3 grid-based game.",
     "githubPath": "https://github.com/nithinRaj031197/Tic_Tac_Toe",
     "projectPath": "https://tic-tac-toe-rosy-alpha.vercel.app/"
-  },
-  {
-    "id": 6,
-    "title": "GitHub Clone",
-    "imagePath": "/github_clone.png",
-    "description": "A stunning replica of GitHub's homepage.",
-    "githubPath": "https://github.com/nithinRaj031197/github_clone",
-    "projectPath": "https://github-clone-zeta-liard.vercel.app/"
   }
 ]
