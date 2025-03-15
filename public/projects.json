@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Task Organizer",
+    "imagePath": "/task_organizer_pic.png",
+    "description": "A task management app for prioritizing work & increasing productivity.",
+    "githubPath": "https://github.com/nithinRaj031197/task-organizer",
+    "projectPath": "https://main--meek-granita-b92b03.netlify.app/"
+  },
+  {
+    "id": 2,
+    "title": "Dynamic Form Generator",
+    "imagePath": "/dynamic_form_generator_pic.png",
+    "description": "Create dynamic, interactive forms without coding.",
+    "githubPath": "https://github.com/nithinRaj031197/Dynamic_form_generator",
+    "projectPath": "https://nimble-kelpie-974a6c.netlify.app/"
+  },
+  {
+    "id": 3,
+    "title": "Kanban Board",
+    "imagePath": "/kanban_board.png",
+    "description": "Visualize and track tasks in agile teams.",
+    "githubPath": "https://github.com/nithinRaj031197/kanban_task_tracker",
+    "projectPath": "https://kanban-task-tracker.vercel.app/"
+  },
+  {
+    "id": 4,
+    "title": "Ecommerce Application",
+    "imagePath": "/ecommerce_app.png",
+    "description": "Enhanced UX and optimized product search in an e-commerce platform.",
+    "githubPath": "https://github.com/nithinRaj031197/ecommerce-app",
+    "projectPath": "https://ecommerce-app-gfdg.vercel.app/"
+  },
+  {
+    "id": 5,
+    "title": "Tic Tac Toe",
+    "imagePath": "/tic_tac_toe.png",
+    "description": "A fun 3x3 grid-based game.",
+    "githubPath": "https://github.com/nithinRaj031197/Tic_Tac_Toe",
+    "projectPath": "https://tic-tac-toe-rosy-alpha.vercel.app/"
+  },
+  {
+    "id": 6,
+    "title": "GitHub Clone",
+    "imagePath": "/github_clone.png",
+    "description": "A stunning replica of GitHub's homepage.",
+    "githubPath": "https://github.com/nithinRaj031197/github_clone",
+    "projectPath": "https://github-clone-zeta-liard.vercel.app/"
+  }
+]

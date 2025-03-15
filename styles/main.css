@@ -1,0 +1,89 @@
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+.social-links {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border-radius 0.6s ease-in-out;
+  padding: 10px;
+}
+
+.social-links:hover {
+  border: 2px solid #45e7ec;
+  border-radius: 50%;
+}
+
+.stick:hover {
+  transition: all ease-in-out 1s;
+}
+
+.header {
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+}
+
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2px 10px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #45e7ec;
+  background: transparent;
+  color: #45e7ec;
+}
+
+.custom-button:hover {
+  background: rgba(69, 231, 236, 0.1);
+  box-shadow: 0px 1px 10px 5px rgba(69, 231, 236, 0.5);
+}
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #222, #45e7ec, #fff, #45e7ec, #222);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  animation: shimmer 2s ease-in-out infinite;
+}
