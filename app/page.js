@@ -1,4 +1,5 @@
 import { EarthCanvas } from "@/canvas";
+import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Header from "@/components/Header";
@@ -15,6 +16,11 @@ export default function Home() {
         <section className="z-50">
           <Hero />
         </section>
+
+        <section id="about" className="z-50">
+          <About />
+        </section>
+
         <section id="experience" className="z-50">
           <Experience />
         </section>
