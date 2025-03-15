@@ -33,13 +33,17 @@ const Hero = () => {
           </div>
 
           <div className="flex gap-10 self-start">
-            <a href="/resume.pdf" className="custom-button ">
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1IHN6ky7O7UG_E-0jGgMzGPqr2YPf9ed7/view?usp=sharing"
+              className="custom-button text-center"
+            >
               Download Resume
             </a>
 
             <a
               href="#contact"
-              className="custom-button"
+              className="custom-button text-center"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById("contact")?.scrollIntoView({

@@ -3,18 +3,33 @@ import { EarthCanvas, StarsCanvas } from "@/canvas";
 import React, { useState } from "react";
 import { FaCheck, FaSpinner } from "react-icons/fa";
 
+const initialState = {
+  name: "",
+  email: "",
+  message: "",
+};
 const Contact = () => {
   const [isSending, setIsSending] = useState(false);
   const [isSent, setIsSent] = useState(false);
+  const [formData, setFormData] = useState(initialState);
+
+  const handleInputValues = (e) => {
+    const { name, value } = e.target;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSending(true);
 
-    // Simulate API call delay
     setTimeout(() => {
       setIsSending(false);
       setIsSent(true);
+      setFormData(initialState);
     }, 2000);
   };
 
@@ -33,8 +48,11 @@ const Contact = () => {
               Your Name
               <input
                 type="text"
+                name="name"
                 placeholder="What's your good name?"
                 className="w-full mt-2 p-3 bg-transparent border border-white rounded-lg text-white"
+                onChange={handleInputValues}
+                value={formData?.name}
               />
             </label>
 
@@ -42,16 +60,22 @@ const Contact = () => {
               Your Email
               <input
                 type="email"
+                name="email"
                 placeholder="What's your web address?"
                 className="w-full mt-2 p-3 bg-transparent border border-white rounded-lg text-white"
+                onChange={handleInputValues}
+                value={formData?.email}
               />
             </label>
 
             <label className="text-white">
               Your Message
               <textarea
+                name="message"
                 placeholder="What you want to say?"
                 className="w-full mt-2 p-3 bg-transparent border border-white rounded-lg text-white h-32"
+                onChange={handleInputValues}
+                value={formData?.message}
               />
             </label>
 
