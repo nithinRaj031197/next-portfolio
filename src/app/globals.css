@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+/* Design tokens: "deep water, quiet instrument". Teal is an accent only. */
+@theme inline {
+  --color-abyss: #07090c;
+  --color-deep: #0c1117;
+  --color-graphite: #12171e;
+  --color-line: #1f2933;
+  --color-silver: #c9d1d9;
+  --color-mist: #8b96a3;
+  --color-accent: #5eead4;
+
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  color-scheme: dark;
+  /* One DOM motion language: small interactions, component reveals, section-scale changes. */
+  --dur-fast: 200ms;
+  --dur-base: 420ms;
+  --dur-slow: 600ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-abyss);
+}
+
+body {
+  margin: 0;
+  /* No body background: the fixed atmosphere and canvas sit behind the page at negative z-index. */
+  color: var(--color-silver);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-accent) 30%, transparent);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/*
+ * Scroll reveals are progressive enhancement. Content is visible by default; MotionController switches
+ * `data-motion="on"` on <html> only after JS has run and reduced motion is known to be off, and only after
+ * everything already on screen is marked revealed, so nothing flashes and nothing is ever stuck hidden.
+ */
+html[data-motion="on"] [data-reveal] {
+  /* Hiding is instant (it happens off-screen); only revealing animates, because a transition uses the
+     destination state's `transition`, which is declared on the revealed rule below. */
+  opacity: 0;
+  transform: translateY(14px);
+}
+html[data-motion="on"] [data-reveal][data-revealed] {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity var(--dur-base) var(--ease-out),
+    transform var(--dur-base) var(--ease-out);
+  transition-delay: calc(var(--reveal-i, 0) * 60ms);
+}
+
+/* Understated link underline that grows from the left on hover and focus. */
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0 1px;
+  transition: background-size var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.link-underline:hover,
+.link-underline:focus-visible {
+  background-size: 100% 1px;
+}
+
+/* <details> keeps its native semantics; where supported, the content height animates open and closed. */
+details {
+  interpolate-size: allow-keywords;
+}
+@supports selector(::details-content) {
+  details::details-content {
+    block-size: 0;
+    overflow: clip;
+    transition:
+      block-size var(--dur-base) var(--ease-out),
+      content-visibility var(--dur-base) allow-discrete;
+  }
+  details[open]::details-content {
+    block-size: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+  details::details-content {
+    transition: none !important;
+  }
+  /* Belt and braces: even if the attribute were set, reduced-motion users never see hidden content. */
+  html[data-motion="on"] [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}
